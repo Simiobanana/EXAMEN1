@@ -1,18 +1,29 @@
 #include <iostream>
 
 using namespace std;
+float valor1, valor2, valor3;
+void IntroduceValores();
+void Comparaciones();
 
 int main()
 {
-	float valor1, valor2, valor3;
+	IntroduceValores();
+	Comparaciones();
 	
+}
+
+void IntroduceValores()
+{
 	cout<<"introduce el valor 1: ";
 	cin>>valor1;
 	cout<<"introduce el valor 2: ";
 	cin>>valor2;
 	cout<<"introduce el valor 3: ";
 	cin>>valor3;
-	
+}
+
+void Comparaciones()
+{
 	if(valor1>valor2 && valor2>valor3)
 	{
 		cout<<"el valor mas grande es: "<<valor1<<endl;
